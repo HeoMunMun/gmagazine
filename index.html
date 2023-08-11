@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="center">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search..." oninput="searchList()">
+        <button onclick="searchList()">Search</button>
+      </div>
+    </div>
+
+    <ul id="imageList">
+        <li>
+            <div class="image-container">
+              <img src="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" alt="Sample Image 1" class="image">
+              <p class="image-description">men - sadeasda<br><a href="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" download><button>Download</button></a></p>
+            </div>
+        </li>
+        <li>
+            <div class="image-container">
+              <img src="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" alt="Sample Image 1" class="image">
+              <p class="image-description">men - sadasdasdasd<br><a href="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" download><button>Download</button></a></p>
+            </div>
+        </li>
+        <li>
+            <div class="image-container">
+              <img src="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" alt="Sample Image 1" class="image">
+              <p class="image-description">lucas - sadasdasdasd<br><a href="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" download><button>Download</button></a></p>
+            </div>
+        </li>
+        <li>
+            <div class="image-container">
+              <img src="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" alt="Sample Image 1" class="image">
+              <p class="image-description">lucas - 354654+6<br><a href="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" download><button>Download</button></a></p>
+            </div>
+        </li>
+        <li>
+            <div class="image-container">
+              <img src="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" alt="Sample Image 1" class="image">
+              <p class="image-description">men<br><a href="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" download><button>Download</button></a></p>
+            </div>
+        </li>
+        <li>
+            <div class="image-container">
+              <img src="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" alt="Sample Image 1" class="image">
+              <p class="image-description">men<br><a href="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" download><button>Download</button></a></p>
+            </div>
+        </li>
+        <li>
+            <div class="image-container">
+              <img src="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" alt="Sample Image 1" class="image">
+              <p class="image-description">men<br><a href="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" download><button>Download</button></a></p>
+            </div>
+        </li>
+        <li>
+            <div class="image-container">
+              <img src="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" alt="Sample Image 1" class="image">
+              <p class="image-description">men<br><a href="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" download><button>Download</button></a></p>
+            </div>
+        </li>
+        <li>
+            <div class="image-container">
+              <img src="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" alt="Sample Image 1" class="image">
+              <p class="image-description">men<br><a href="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" download><button>Download</button></a></p>
+            </div>
+        </li>
+        <li>
+            <div class="image-container">
+              <img src="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" alt="Sample Image 1" class="image">
+              <p class="image-description">men<br><a href="https://zing.waybig.com/reviews/DrillMyHole/08-09-23/johnny-donovan-jake-preston-suns-out-buns-out-men-01.jpg" download><button>Download</button></a></p>
+            </div>
+        </li>  
+      <!-- Add more list items as needed -->
+    </ul>
+    <p id="noResultMessage" style="display: none;">No results found.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
