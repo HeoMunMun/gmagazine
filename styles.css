@@ -44,6 +44,11 @@ li {
   margin-bottom: 5px;
 }
 
+.image-description {
+  font-size: 14px;
+  text-align: center; /* Center align the description */
+}
+
 .download-button {
   background-color: #3498db;
   color: white;
@@ -61,9 +66,4 @@ li {
 
 .download-button:active {
   background-color: #1f618d;
-}
-
-.image-description {
-  font-size: 14px;
-  text-align: center; /* Center align the description */
 }
