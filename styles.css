@@ -45,12 +45,22 @@ li {
 }
 
 .download-button {
-  background-color: #4CAF50;
+  background-color: #3498db;
   color: white;
   border: none;
-  padding: 5px 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #2980b9;
+}
+
+.download-button:active {
+  background-color: #1f618d;
 }
 
 .image-description {
