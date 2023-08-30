@@ -31,3 +31,20 @@ window.addEventListener("keydown", function (event) {
     event.preventDefault();
   }
 });
+
+const myList = document.querySelector('#imageList');
+    const listItems = Array.from(imageList.children);
+  
+    listItems.sort((a, b) => {
+      if (a.textContent < b.textContent) {
+        return 1;
+      } else if (a.textContent > b.textContent) {
+        return -1;
+      } else {
+        return 0;
+      }
+    });
+  
+    listItems.forEach((item) => {
+      imageList.appendChild(item);
+    });
