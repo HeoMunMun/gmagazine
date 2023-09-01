@@ -14,7 +14,18 @@
         <button onclick="searchList()">Search</button>
       </div>
     </div>
+<h1>Số lượt truy cập: <span id="counter">0</span></h1>
 
+    <script>
+        let count = 0;
+        if (localStorage.getItem('page_views')) {
+            count = parseInt(localStorage.getItem('page_views'));
+        }
+
+        count++;
+        localStorage.setItem('page_views', count);
+        document.getElementById('counter').textContent = count;
+    </script>
     <ul id="imageList">
         <li>
             <div class="image-container">
