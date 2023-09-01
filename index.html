@@ -15,7 +15,18 @@
       </div>
     </div>
 <h1>Số lượt truy cập: <span id="counter">0</span></h1>
+<style>
+  h1 {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px;
+        }
 
+        #counter {
+            font-size: 48px;
+            color: #007BFF;
+        }
+</style>
     <script>
         let count = 0;
         if (localStorage.getItem('page_views')) {
