@@ -1,3 +1,4 @@
+<!-- main script -->
 function searchList() {
   var input, filter, list, items, i, txtValue;
   input = document.getElementById("searchInput");
@@ -32,6 +33,7 @@ window.addEventListener("keydown", function (event) {
   }
 });
 
+<!-- Sap xep thep thu tu tu z den a -->
 const myList = document.querySelector('#imageList');
     const listItems = Array.from(imageList.children);
   
@@ -49,6 +51,7 @@ const myList = document.querySelector('#imageList');
       imageList.appendChild(item);
     });
 
+<!-- dem luot truy cap -->
 let count = 0;
         if (localStorage.getItem('page_views')) {
             count = parseInt(localStorage.getItem('page_views'));
