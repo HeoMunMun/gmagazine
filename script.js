@@ -48,3 +48,12 @@ const myList = document.querySelector('#imageList');
     listItems.forEach((item) => {
       imageList.appendChild(item);
     });
+
+let count = 0;
+        if (localStorage.getItem('page_views')) {
+            count = parseInt(localStorage.getItem('page_views'));
+        }
+
+        count++;
+        localStorage.setItem('page_views', count);
+        document.getElementById('counter').textContent = count;
