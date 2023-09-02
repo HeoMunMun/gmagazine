@@ -49,6 +49,7 @@ li {
 .image-description {
   font-size: 14px;
   text-align: center; /* Center align the description */
+  font-weight: bold;
 }
 
 .download-button {
