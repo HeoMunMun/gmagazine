@@ -30,7 +30,7 @@ document.addEventListener("keydown", function(event) {
     // Kiểm tra xem người dùng có đang nhấn tổ hợp phím Ctrl + S, Ctrl + U hoặc Ctrl + I không
     if ((event.ctrlKey || event.metaKey) && (event.key === "s" || event.key === "u" || event.key === "i")) {
         // Chuyển trang web đến link được chỉ định trước
-        window.location.href = "https://example.com"; // Thay đổi URL theo đúng link bạn muốn chuyển đến
+        window.location.href = "https://web1s.co/note/Kohooa92WP"; // Thay đổi URL theo đúng link bạn muốn chuyển đến
         event.preventDefault(); // Ngăn ngừng xảy ra sau khi thực hiện hành động
     }
 });
