@@ -24,13 +24,14 @@ function searchList() {
     noResultMessage.style.display = "none";
   }
 }
-// Ngăn chặn sự kiện khi nhấn các tổ hợp phím Ctrl + U, Ctrl + S, Ctrl + C
-window.addEventListener("keydown", function (event) {
-  if ((event.ctrlKey && event.key === "u") || 
-      (event.ctrlKey && event.key === "s") || 
-      (event.ctrlKey && event.key === "c")) {
-    event.preventDefault();
-  }
+// Ngăn chặn sự kiện khi nhấn các tổ hợp phím Ctrl + U, Ctrl + S, Ctrl + I, Ctrl + C
+document.addEventListener("keydown", function(event) {
+    // Kiểm tra xem người dùng có đang nhấn tổ hợp phím Ctrl + S hoặc Ctrl + U hoặc Ctrl + I không
+    if ((event.ctrlKey || event.metaKey) && (event.key === "s" || event.key === "u" || event.key === "i" || event.key === "c")) {
+        // Chuyển trang web đến link được chỉ định trước
+        window.location.href = "https://heomunmun.github.io/gmagazine/"; // Thay đổi URL theo đúng link bạn muốn chuyển đến
+        event.preventDefault(); // Ngăn ngừng xảy ra sau khi thực hiện hành động
+    }
 });
 
 <!-- Sap xep thep thu tu tu z den a -->
